@@ -12,6 +12,5 @@ namespace RazorCompiler.Controllers
         {
             return Content("Hello World");
         }
-        
     }
 }
