@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using RazorCompiler.Helpers;
 
 namespace RazorCompiler
 {
@@ -29,6 +30,8 @@ namespace RazorCompiler
         {
             // Add framework services.
             services.AddMvc();
+
+            services.AddTransient<ViewRenderService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
